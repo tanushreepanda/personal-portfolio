@@ -384,11 +384,12 @@ span {
 .contact {
     background-color: var(--bg-color);
 }
+
 .contact h2{
     margin-bottom: 3rem;
     color: white;
 }
-.contact form {
+.contact-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,13 +397,13 @@ span {
     margin: 5rem auto;
     text-align: center;
 }
-.contact form .input-box {
+.contact-form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.contact form .input-box input,
-.contact form textarea {
+.contact-form .input-box input,
+.contact-form textarea {
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
@@ -413,7 +414,7 @@ span {
     margin: 1.5rem 0;
     resize: none;
 }
-.contact form .btn {
+.contact-form .btn {
     margin-top: 2rem;
 }
 .footer {
@@ -484,7 +485,7 @@ span {
     .projects .wrapper{
         grid-template-columns: repeat(1,1fr);
     }
-    .contact form{
+    .contact-form{
         flex-direction: column;
     }
     .footer {
