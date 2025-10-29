@@ -208,13 +208,19 @@ span {
     }
 }
 @keyframes words{
-    0%,30%{
+    0%,20%{
         content: "Frontend Developer";
     }
-    31%,60% {
+    21%,40%{
+        content: "Web Designer";
+    }
+    41%,60%{
+        content: "UI / UX Designer";
+    }
+    61%,80% {
         content: "Web Developer";
     }
-    61%,100% {
+    81%,100% {
         content: "Shopify Developer";
     }
 }
