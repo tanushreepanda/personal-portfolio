@@ -188,50 +188,55 @@ span {
     position: relative;
 }
 .text-animation span::before {
-    content: "Web Developer";
-    color: var(--main-color);
-    animation: words 20s infinite;
+  content: "Frontend Developer";
+  color: var(--main-color);
+  animation: words 16s infinite;
 }
+
 .text-animation span::after {
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+  content: "";
+  background-color: var(--bg-color);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--bg-color);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 16s infinite;
 }
+
+/* Cursor blinking */
 @keyframes cursor {
-    to{
-        border-left: 2px solid var(--main-color);
-    }
+  to {
+    border-left: 2px solid var(--main-color);
+  }
 }
-@keyframes words{
-    0%,20%{
-        content: "Frontend Developer";
-    }
-    21%,40%{
-        content: "Web Designer";
-    }
-    41%,60%{
-        content: "UI / UX Designer";
-    }
-    61%,80% {
-        content: "Web Developer";
-    }
-    81%,100% {
-        content: "Shopify Developer";
-    }
+
+/* Roles rotation – 4 total */
+@keyframes words {
+  0%, 24% {
+    content: "Frontend Developer";
+  }
+  25%, 49% {
+    content: "Freelancer";
+  }
+  50%, 74% {
+    content: " Web Developer";
+  }
+  75%, 100% {
+    content: " Shopify Developer";
+  }
 }
-@keyframes typing{
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85% {
-        width: calc(100% + 8px);
-    }
+
+/* Typing effect synchronization */
+@keyframes typing {
+  10%, 15%, 35%, 40%, 60%, 65%, 85%, 90% {
+    width: 0;
+  }
+  5%, 25%, 30%, 50%, 55%, 75%, 80%, 100% {
+    width: calc(100% + 8px);
+  }
 }
+
 .heading {
     font-size: 8rem;
     text-align: center;
@@ -447,6 +452,30 @@ span {
     background-color: var(--main-color);
     color: black;
     box-shadow: 0 0 25px var(--main-color);
+}
+.shopify_project img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.shopify_project p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.shopify_project h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.shopify_project p,
+.shopify_project h2 {
+    color: var(--text-color);
+}
+.shopify_project {
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+.shopify_project:hover {
+    transform: scale(1.03);
 }
 @media(max-width: 1285px){
     html{
