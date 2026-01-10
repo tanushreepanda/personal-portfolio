@@ -188,7 +188,7 @@ span {
     position: relative;
 }
 .text-animation span::before {
-  content: "Frontend Developer";
+  content: "Shopify Developer";
   color: var(--main-color);
   animation: words 16s infinite;
 }
@@ -214,16 +214,16 @@ span {
 /* Roles rotation – 4 total */
 @keyframes words {
   0%, 24% {
-    content: "Frontend Developer";
+    content: "Shopify Developer";
   }
   25%, 49% {
-    content: "Freelancer";
+    content: "Web Developer";
   }
   50%, 74% {
-    content: " Web Developer";
+    content: " Freelancer";
   }
   75%, 100% {
-    content: " Shopify Developer";
+    content: " Frontend Developer";
   }
 }
 
@@ -339,7 +339,6 @@ span {
 .skills-container, .wrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    place-items: center;
     gap: 3.5rem;
 }
 .skills-box {
@@ -465,10 +464,13 @@ span {
 .shopify_project h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
-.shopify_project p,
-.shopify_project h2 {
+.shopify_project p{
     color: var(--text-color);
+}
+.shopify_project h2 {
+    color: var(--main-color);
 }
 .shopify_project {
     position: relative;
