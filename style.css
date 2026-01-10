@@ -376,6 +376,7 @@ span {
     position: relative;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    margin: auto;
 }
 .project-items:hover {
     transform: scale(1.03);
